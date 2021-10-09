@@ -23,7 +23,7 @@ class App extends Component {
         <div className="input">
           <input
             type="text"
-            placeholder="Digite seu nome"
+            placeholder="Qual seu nome?"
             onChange={this.handlerChange}
             className="digitar"
           />
