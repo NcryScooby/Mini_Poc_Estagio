@@ -6,13 +6,13 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      message: "",
+      message: "Seu nome vai aparecer aqui!",
     };
   }
 
-  handlerChange = (e) => {
+  handlerChange = (nome) => {
     let message =
-      e.target.value === "" ? "" : "Seja bem vindo, " + e.target.value + "!";
+      nome.target.value === "" ? "Seu nome vai aparecer aqui!" : "Seja bem vindo, " + nome.target.value + "!";
     this.setState({ ...this.state, message: message });
   };
 
